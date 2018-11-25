@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPN-Shaker.Android", "RPN-Shaker\RPN-Shaker.Android\RPN-Shaker.Android.csproj", "{F5A00B36-A006-4D62-802C-87984592EDD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPN-Shaker", "RPN-Shaker\RPN-Shaker\RPN-Shaker.csproj", "{03439F11-E52A-4880-88E8-B55E8C6D21A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A00B36-A006-4D62-802C-87984592EDD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A00B36-A006-4D62-802C-87984592EDD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A00B36-A006-4D62-802C-87984592EDD0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F5A00B36-A006-4D62-802C-87984592EDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A00B36-A006-4D62-802C-87984592EDD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A00B36-A006-4D62-802C-87984592EDD0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{03439F11-E52A-4880-88E8-B55E8C6D21A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03439F11-E52A-4880-88E8-B55E8C6D21A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03439F11-E52A-4880-88E8-B55E8C6D21A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03439F11-E52A-4880-88E8-B55E8C6D21A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BD5A999-17AF-491D-B7C3-263B9F59EC60}
+	EndGlobalSection
+EndGlobal
