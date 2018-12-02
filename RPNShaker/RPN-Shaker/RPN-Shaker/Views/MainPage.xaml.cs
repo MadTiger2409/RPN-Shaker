@@ -13,9 +13,6 @@ namespace RPN_Shaker.Views
         public MainPage()
         {
             InitializeComponent();
-
-            var viewModel = new MainPageViewModel();
-            BindingContext = viewModel;
         }
     }
 }

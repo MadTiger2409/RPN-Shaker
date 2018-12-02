@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RPN_Shaker"
+             xmlns:viewModels="clr-namespace:RPN_Shaker.ViewModels"
              x:Class="RPN_Shaker.Views.MainPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:MainPageViewModel/>
+    </ContentPage.BindingContext>
 
     <Grid BackgroundColor="Black"
           RowSpacing="0"
@@ -14,7 +19,8 @@
         <ScrollView Grid.Row="0">
             <Label FontSize="40"
                    TextColor="GhostWhite"
-                   Margin="8,0,8,0"/>
+                   Margin="8,0,8,0"
+                   Text="{Binding Equation, Mode=OneWay}"/>
         </ScrollView>
         
         <Grid Grid.Row="1"
@@ -41,94 +47,122 @@
                     Grid.ColumnSpan="2"
                     Text="CE"
                     FontSize="Large"
-                    BackgroundColor="IndianRed"/>
+                    BackgroundColor="IndianRed"
+                    Command="{Binding ClearAllCommand}"/>
 
             <Button Grid.Row="0"
                     Grid.Column="2"
                     Text="&#x2190;"
                     FontSize="Large"
-                    BackgroundColor="IndianRed"/>
+                    BackgroundColor="IndianRed"
+                    Command="{Binding RemoveCharacterCommand}"/>
 
             <Button Grid.Row="0"
                     Grid.Column="3"
                     Text="/"
                     FontSize="Large"
-                    BackgroundColor="CadetBlue"/>
+                    BackgroundColor="CadetBlue"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="/"/>
 
             <!-- Second row -->
             <Button Grid.Row="1"
                     Grid.Column="0"
                     Text="7"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="7"/>
 
             <Button Grid.Row="1"
                     Grid.Column="1"
                     Text="8"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="8"/>
             
             <Button Grid.Row="1"
                     Grid.Column="2"
                     Text="9"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="9"/>
 
             <Button Grid.Row="1"
                     Grid.Column="3"
                     Text="*"
                     FontSize="Large"
-                    BackgroundColor="CadetBlue"/>
+                    BackgroundColor="CadetBlue"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="*"/>
 
             <!-- Third row -->
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Text="4"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="4"/>
 
             <Button Grid.Row="2"
                     Grid.Column="1"
                     Text="5"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="5"/>
 
             <Button Grid.Row="2"
                     Grid.Column="2"
                     Text="6"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="6"/>
 
             <Button Grid.Row="2"
                     Grid.Column="3"
                     Text="-"
                     FontSize="Large"
-                    BackgroundColor="CadetBlue"/>
+                    BackgroundColor="CadetBlue"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="-"/>
 
             <!-- Fourth row -->
             <Button Grid.Row="3"
                     Grid.Column="0"
                     Text="1"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="1"/>
 
             <Button Grid.Row="3"
                     Grid.Column="1"
                     Text="2"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="2"/>
 
             <Button Grid.Row="3"
                     Grid.Column="2"
                     Text="3"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="3"/>
 
             <Button Grid.Row="3"
                     Grid.Column="3"
                     Text="+"
                     FontSize="Large"
-                    BackgroundColor="CadetBlue"/>
+                    BackgroundColor="CadetBlue"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="+"/>
             
             <!-- Fifth row -->
 
@@ -137,19 +171,25 @@
                     Grid.ColumnSpan="2"
                     Text="0"
                     FontSize="Large"
-                    BackgroundColor="YellowGreen"/>
+                    BackgroundColor="YellowGreen"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="0"/>
 
             <Button Grid.Row="4"
                     Grid.Column="2"
                     Text="("
                     FontSize="Large"
-                    BackgroundColor="PaleVioletRed"/>
+                    BackgroundColor="PaleVioletRed"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter="("/>
 
             <Button Grid.Row="4"
                     Grid.Column="3"
                     Text=")"
                     FontSize="Large"
-                    BackgroundColor="PaleVioletRed"/>
+                    BackgroundColor="PaleVioletRed"
+                    Command="{Binding AddCharacterCommand}"
+                    CommandParameter=")"/>
         </Grid>
     </Grid>
 
