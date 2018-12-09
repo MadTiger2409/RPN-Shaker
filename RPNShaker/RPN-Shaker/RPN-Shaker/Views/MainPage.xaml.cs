@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RPN_Shaker.ViewModels;
 using Xamarin.Forms;
 
 namespace RPN_Shaker.Views
