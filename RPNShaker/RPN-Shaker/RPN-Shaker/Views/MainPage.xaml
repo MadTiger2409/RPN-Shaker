@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RPN_Shaker"
              xmlns:viewModels="clr-namespace:RPN_Shaker.ViewModels"
-             x:Class="RPN_Shaker.Views.MainPage">
+             x:Class="RPN_Shaker.Views.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
 
     <ContentPage.BindingContext>
         <viewModels:MainPageViewModel/>

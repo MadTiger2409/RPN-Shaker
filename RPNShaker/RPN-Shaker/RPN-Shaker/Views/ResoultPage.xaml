@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RPN_Shaker.Views.ResoultPage">
+             x:Class="RPN_Shaker.Views.ResoultPage"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
     <ContentPage.Content>
         <Grid BackgroundColor="Black">
             <Grid.RowDefinitions>
@@ -9,15 +11,16 @@
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0"
-                   Text="23+"
+            <Label x:Name="resoultLabel"
+                   Grid.Row="0"
                    FontSize="40"
                    TextColor="GhostWhite"
                    Margin="8,0,0,8"/>
 
             <Button Grid.Row="1"
                     Text="Back"
-                    BackgroundColor="CornflowerBlue"/>
+                    BackgroundColor="CornflowerBlue"
+                    Clicked="BackButtonClicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

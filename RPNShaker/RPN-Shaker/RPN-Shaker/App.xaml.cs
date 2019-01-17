@@ -1,5 +1,4 @@
 ﻿using System;
-using RPN_Shaker.Pages;
 using RPN_Shaker.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,7 +12,7 @@ namespace RPN_Shaker
         {
             InitializeComponent();
 
-            MainPage = new ShakeListenerNavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

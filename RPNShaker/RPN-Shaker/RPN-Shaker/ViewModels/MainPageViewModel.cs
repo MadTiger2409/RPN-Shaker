@@ -22,25 +22,25 @@ namespace RPN_Shaker.ViewModels
         {
             Equation = "";
 
-            RPNCoverter.ClearAll();
+            RPNConverter.ClearAll();
             AddCharacterCommand = new RelayCommand<object>(x =>
             {
                 Equation += x as string;
-                RPNCoverter.AddToInputList(x as string);
+                RPNConverter.AddToInputList(x as string);
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Equation)));
             });
 
             RemoveCharacterCommand = new RelayCommand(() =>
             {
                 RemoveCharacterFromEquation();
-                RPNCoverter.RemoveFromInputList();
+                RPNConverter.RemoveFromInputList();
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Equation)));
             });
 
             ClearAllCommand = new RelayCommand(() =>
             {
                 Equation = "";
-                RPNCoverter.ClearAll();
+                RPNConverter.ClearAll();
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Equation)));
             });
         }

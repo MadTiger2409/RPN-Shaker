@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RPNShaker.Logic
 {
-    public static class RPNCoverter
+    public static class RPNConverter
     {
         // String for output
         private static string output = "";
