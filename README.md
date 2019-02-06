@@ -24,7 +24,3 @@
 *  Go to the [releases for this repository](https://github.com/MadTiger2409/RPN-Shaker/releases).
 *  Choose release you want to install.
 *  Look for `RPN_Shaker.apk` file in choosen release. This is the application file that you want to use.
-
-## Instruction
-
-// to do
